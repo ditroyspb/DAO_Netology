@@ -9,7 +9,6 @@ import ru.netology.netologyjdbc.service.OrderService;
 
 @Controller
 @RequestMapping("/products")
-//@RequiredArgsConstructor
 public class OrderController {
 
 
@@ -17,7 +16,6 @@ public class OrderController {
     private OrderController(OrderService service) {
         this.orderService = service;
     }
-//    private final OrderService orderService;
 
     @GetMapping("/fetch-product")
     @ResponseBody
